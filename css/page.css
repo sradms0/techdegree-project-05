@@ -1,0 +1,149 @@
+/*========================================
+    Page
+ ========================================*/
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 0px;
+    background-color: #2f343f;
+}
+
+.page-header {
+    line-height: 10%;
+    position: fixed;
+    width: 100%;
+    background-color: #2f343f;
+}
+    h2 {
+        color: #e7e7e7;
+    }
+    .search {
+        background-color: #1c1f27;
+        color: #e7e7e7;
+        border: none;
+        border-radius: 7px;
+        height: 20px;
+    }
+
+.space {
+    height: 100px;
+}
+
+.overlay {
+    transition: opacity ease-in-out .2s;
+}
+
+.overlay.disabled {
+    opacity: .1;
+}
+
+
+.hovered {
+    background-color: #282d3a;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+/*========================================
+    Modal Window
+ ========================================*/
+
+.modal-window {
+    max-width: 100% !important;
+    border: 2px solid #495167;
+    border-radius: 7px;
+    z-index: 1;
+    width: 32%;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #1c1f27;
+;
+
+    transition: visibility 0s ease-out .05s, opacity .5s;
+}
+
+    .modal-window.hidden {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .modal-window.reveal {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .modal-window .employee-details {
+        margin: 60px auto;
+        display: table;
+        text-align: center;
+        font-size: 14px;
+    }
+    .modal-window .other {
+        margin-top: -10px;
+    }
+        .modal-content .main:after {
+            max-width: 100% !important;
+            content: "";
+            background-color: #495167;
+            width: 320px;
+            height: 1px;
+            width: 320px;
+            height: 1px;
+            display: block;
+            margin-top: 30px;
+            margin-left: -55px;
+            opacity: .7;
+            position: fixed;
+            text-align: center;
+        }
+
+        .modal-content .avatar {
+            text-align: center;
+            margin-top: -20px;
+            margin-left: 35px;
+            margin-bottom: 35px;
+        }
+        .modal-content .avatar img{
+            border-radius: 90px;
+            width: 150px;
+            height: 150px;
+        }
+
+
+    .modal-window .modal-exit {
+        width: 16px;
+        height: 16px;
+        float: right;
+        text-decoration: none;
+        color: #626c87;
+        text-align: center;
+        font-weight: bold;
+        transition: color .2s;
+    }
+    .modal-exit:hover {
+        color: white;
+    }
+
+    .modal-window .modal-nav {
+        margin-top: -50px;
+        text-align: center;
+        transition: color ease-in-out .2s;
+    }
+    a.modal-nav {
+        padding: 1px;
+        text-decoration: none;
+        color: coral;
+    }
+    a.modal-nav:hover {
+        color: #e7e7e7;
+    }

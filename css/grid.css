@@ -1,0 +1,60 @@
+/*========================================
+    Employee Grid
+ ========================================*/
+
+.employee-list {
+    display: grid;
+    max-width: 2000px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(3, 165px);
+    grid-gap: 15px;
+}
+
+    .employee-item {
+        background-color: #1c1f27;
+        width: 370px;
+        height: 125px;
+        padding: 15px;
+        border: 2px solid #282d3a;
+        border-radius: 7px;
+        white-space: nowrap;
+        overflow: hidden;
+
+        transition: background-color ease-in-out .25s;
+    }
+
+    .employee-details > div{
+        margin-top: 7px;
+    }
+    .employee-details {
+        text-align: justify;
+        margin-top: 7%;
+        bottom: 50%;
+        color: #888;
+    }
+
+
+    .employee-details .avatar {
+        margin-top: -5px;
+        float: left;
+    }
+
+    .employee-details .avatar img {
+        border-radius: 70px;
+        margin-right: 20px;
+        width: 80px;
+        height: auto;
+    }
+
+    .employee-details .name {
+        margin: 4px 0 2px 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #e7e7e7;
+    }
+
+    .other.hidden,
+    .employee-item.hidden {
+        display: none;
+    }
+
