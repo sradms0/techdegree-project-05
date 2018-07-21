@@ -147,3 +147,9 @@ body {
     a.modal-nav:hover {
         color: #e7e7e7;
     }
+
+@media screen and (max-width: 570px) {
+    h2 {
+        line-height: 100px;
+    }
+}
