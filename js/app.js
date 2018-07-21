@@ -98,6 +98,14 @@ const employeeModule = (function() {
         const modalEmployee = employeeItem.firstChild.outerHTML + 
             employeeItem.lastChild.outerHTML;
         modalWindow.children[1].innerHTML = modalEmployee;
+
+        // disable clickable elements;
+        const employeeDetails = modalWindow
+            .querySelectorAll('.employee-details');
+        employeeDetails[0]
+            .classList.add('disabled');
+        employeeDetails[1]
+            .classList.replace('hidden', 'disabled');
         modalWindow.setAttribute('data-link', 
             employeeItem.getAttribute('data-link'));
     }
@@ -133,14 +141,7 @@ const employeeModule = (function() {
                 modalWindow.classList.add('reveal');
 
                 modalGenerator(employeeItem);
-                // disable clickable elements;
-                const employeeDetails = modalWindow
-                    .querySelectorAll('.employee-details');
                 page.classList.add('disabled');
-                employeeDetails[0]
-                    .classList.add('disabled');
-                employeeDetails[1]
-                    .classList.replace('hidden', 'disabled');
 
             }
         }
