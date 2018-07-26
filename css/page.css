@@ -92,21 +92,19 @@ body {
     .modal-window .other {
         margin-top: -10px;
     }
-        /*
-         *.modal-content .main:after {
-         *    max-width: 100% !important;
-         *    content: "";
-         *    background-color: #495167;
-         *    width: 320px;
-         *    height: 1px;
-         *    display: block;
-         *    margin-top: 30px;
-         *    margin-left: -55px;
-         *    opacity: .7;
-         *    position: fixed;
-         *    text-align: center;
-         *}
-         */
+        .modal-content .main:after {
+            max-width: 100% !important;
+            content: "";
+            background-color: #495167;
+            width: 320px;
+            height: 1px;
+            display: block;
+            margin-top: 30px;
+            margin-left: -55px;
+            opacity: .7;
+            position: fixed;
+            text-align: center;
+        }
 
         .modal-content .avatar {
             text-align: center;
@@ -154,4 +152,6 @@ body {
     h2 {
         line-height: 100px;
     }
+
 }
+
